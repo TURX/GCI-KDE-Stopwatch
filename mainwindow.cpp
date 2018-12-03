@@ -24,6 +24,7 @@ void MainWindow::onNumberChanged(int Number) {
 
 void MainWindow::on_pushButtonStart_clicked()
 {
+    mThread->Stop = false;
     mThread->start();
 }
 
